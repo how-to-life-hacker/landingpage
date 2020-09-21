@@ -1,0 +1,265 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#left {
+    width: 50%;
+    height: 100vh;
+    background: #eee;
+}
+
+#right {
+    width: 50%;
+    height: 100vh;
+    background: rgb(61, 108, 194);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#img {
+    width: 25rem;
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+}
+
+#img img {
+   width: 100%;
+   height: auto; 
+}
+
+#nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+}
+
+#nav #logo {
+    width: 30%;
+    height: 100%;
+    padding-left: 8%;    
+}
+
+#nav #logo h1 {
+    line-height: 5rem;
+    text-transform: uppercase;
+    color: rgb(31, 197, 175);
+    font-size: 2rem;
+    font-family: 'Bangers', cursive;    
+}
+
+#nav #menu1 {
+    width: 100%;
+    height: 100%;
+}
+
+#nav #menu1 nav {
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+#nav #menu1 nav a {
+    line-height: 2;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;   
+}
+
+.content {
+    position: absolute;
+    top: 13.75rem;
+    left: 10%;
+    width: 30%;
+}
+
+.content h1 {
+    font-size: 2.8rem;
+    letter-spacing: 0.25rem;
+}
+
+.content p{
+    letter-spacing: 0.125rem;
+}
+
+.content button{
+    margin-top: 3.125rem;
+    width: 11.25rem;
+    height: 1.875rem;
+    border: 0;
+    background: #3a77e9;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 3px #000;
+}
+
+.content button:hover {
+    color: #000;
+    background: #cccccc;
+}
+
+#media {
+    width: 12.5rem;
+    height: 3.125;
+    position: absolute;
+    left: 10%;
+    bottom: 1.25rem;
+}
+#media ul {
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#media ul li {
+    width: 3.125rem;
+    height: 3.125rem;
+    background: #fff;
+    text-align: center;
+    line-height: 3.125rem;
+    border-radius: 50%;
+    transition: .5%;   
+}
+
+#media ul li:hover {
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+footer {
+    width: 100%;
+    height: 15vh;
+    background: black;
+}
+
+
+@media(max-width: 1024px) {
+    #img {
+        bottom: 25%;
+        right: 6%;
+    }
+}
+
+@media(max-width: 800px) {
+    #img {
+        width: 20rem;
+        bottom: 35%; 
+    }
+    #nav #menu1 nav a {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-top: 3rem;
+    }
+    #logo {
+        margin-top: 2.5rem;
+    }
+    .content {
+        top: 20rem;
+    }
+    #media {
+        width: 15rem;
+        height: 4rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    #media ul {
+        display: flex;
+        justify-content: space-between;  
+    }
+    #media li {
+        width: 4rem;
+        height: 4rem;
+        text-align: center;
+        line-height: 4rem;
+        transition: .5%;  
+        font-size: 1.5rem; 
+    }
+  
+}
+
+
+@media(max-width: 500px) {
+    #left, #right {
+        width: 50%;
+        height: 100vh;
+
+    }
+    #img {
+        width: 12rem;
+        height: 12rem;
+        bottom: 50%;
+    }
+   #nav #menu1 nav  {
+       display: flex;
+       flex-direction: column;
+       
+   }
+}
+
+
+
+/* 
+#nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+}
+
+#nav #logo {
+    width: 30%;
+    height: 100%;
+    padding-left: 8%;    
+}
+
+#nav #logo h1 {
+    line-height: 5rem;
+    text-transform: uppercase;
+    color: rgb(31, 197, 175);
+    font-size: 2rem;
+    font-family: 'Bangers', cursive;    
+}
+
+#nav #menu1 {
+    width: 100%;
+    height: 100%;
+}
+
+#nav #menu1 nav {
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+#nav #menu1 nav a {
+    line-height: 2;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;   
+} */
