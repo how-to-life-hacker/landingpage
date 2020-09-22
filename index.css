@@ -26,16 +26,17 @@ body {
     right: 0;
 }
 
-#img {
+img {
     width: 25rem;
-    position: absolute;
-    bottom: 10%;
-    right: 15%;
+    height: auto;
 }
 
-#img img {
-   width: 100%;
-   height: auto; 
+#right img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 15rem;
+    margin-left: 15rem;
 }
 
 #nav {
@@ -47,19 +48,13 @@ body {
     display: flex;
 }
 
-#nav #logo {
-    width: 30%;
-    height: 100%;
-    padding-left: 8%;    
+#nav #logo img {
+    width: 7rem;
+    height: auto;
+    margin-left: 3rem;
+    margin-top: 2rem;    
 }
 
-#nav #logo h1 {
-    line-height: 5rem;
-    text-transform: uppercase;
-    color: rgb(31, 197, 175);
-    font-size: 2rem;
-    font-family: 'Bangers', cursive;    
-}
 
 #nav #menu1 {
     width: 100%;
@@ -84,25 +79,45 @@ body {
 }
 
 .content {
-    position: absolute;
-    top: 13.75rem;
-    left: 10%;
-    width: 30%;
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    text-align: center;
 }
 
-.content h1 {
+.content h2 {
     font-size: 2.8rem;
     letter-spacing: 0.25rem;
+    width: 30rem;
+}
+.content p {
+    font-size: 1rem;
+    width: 30rem;
 }
 
-.content p{
+#home h1 {
+    font-size: 3rem;
+    padding-top: 25rem;
+    width: 40rem;
+    margin-left: 14rem;
+    
+}
+
+#home p{
     letter-spacing: 0.125rem;
+    width: 40rem;
+    margin-left: 5rem;
+    font-size: 1rem;
+    margin-top: 3rem;
 }
 
-.content button{
-    margin-top: 3.125rem;
-    width: 11.25rem;
-    height: 1.875rem;
+#home button{
+    margin-top: 6rem;
+    margin-left: 18rem;
+    width: 12rem;
+    height: 3rem;
     border: 0;
     background: #3a77e9;
     color: #fff;
@@ -118,29 +133,30 @@ body {
 #media {
     width: 12.5rem;
     height: 3.125;
-    position: absolute;
-    left: 10%;
-    bottom: 1.25rem;
+    padding-top:3rem;
+    padding-top: 3rem;
+    margin-left: 50rem;
 }
 #media ul {
     list-style-type: none;
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
 }
 #media ul li {
-    width: 3.125rem;
-    height: 3.125rem;
+    width: 5rem;
+    height: 4rem;
     background: #fff;
     text-align: center;
-    line-height: 3.125rem;
-    border-radius: 50%;
-    transition: .5%;   
+    line-height: 2rem;
+    border-radius: 30%;
+    transition: .5%;  
+    font-size: 4rem; 
+    margin: .5rem;
 }
 
 #media ul li:hover {
-    background: #000;
+    background: rgb(79, 192, 154);
     color: #fff;
     cursor: pointer;
 }
@@ -154,38 +170,68 @@ footer {
 
 
 @media(max-width: 1024px) {
-    #img {
-        bottom: 25%;
-        right: 6%;
+    #right {
+       display: flex;
+       justify-content: center;
+       margin-left: 3rem;
+    }
+    #home h1, #home p {
+        margin-left: 5rem;
+        width: 20rem;
+    }
+    #home h1 {
+        padding-top: 16rem;
+    }
+    #home button {
+        margin-top: 3rem;
+        margin-left: 9rem;
+        width: 6rem;
+    }
+    .content {
+        margin: 0;
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    #media {
+        margin-left: 25rem;
+    }
+    img {
+        display: flex;
+        justify-content: center;
+        object-fit: contain;
+        margin-right: 16rem;
+        margin-top: 0;
+    }
+    #menu1 nav {
+        display: flex;
+        flex-direction: column;
     }
 }
 
 @media(max-width: 800px) {
-    #img {
+    img {
         width: 20rem;
         bottom: 35%; 
+        display: flex;
+        justify-content: center;
     }
-    #nav #menu1 nav a {
+    #nav #menu1 nav {
         font-size: 1.2rem;
         font-weight: 500;
-        margin-top: 3rem;
+        padding-top: 10rem;
+        display: flex;
+        justify-content: center;
     }
-    #logo {
-        margin-top: 2.5rem;
+    #nav #logo img{
+        width: 10rem;  
     }
-    .content {
-        top: 20rem;
-    }
+    
     #media {
         width: 15rem;
         height: 4rem;
-        display: flex;
-        justify-content: space-between;
+        margin-left: 16rem;
     }
-    #media ul {
-        display: flex;
-        justify-content: space-between;  
-    }
+    
     #media li {
         width: 4rem;
         height: 4rem;
@@ -194,72 +240,67 @@ footer {
         transition: .5%;  
         font-size: 1.5rem; 
     }
+    #home p, #home h1{
+        display: flex;
+        justify-content: center;
+        margin-left: 2rem;
+    }
   
 }
 
 
 @media(max-width: 500px) {
-    #left, #right {
-        width: 50%;
-        height: 100vh;
-
+    
+    img {
+        display: flex;
+        justify-content: center;
+        width: 10rem;   
     }
-    #img {
-        width: 12rem;
-        height: 12rem;
-        bottom: 50%;
+    #nav #menu1 nav a{
+
+       font-size: 1.5rem;
+       font-weight: 500;
     }
-   #nav #menu1 nav  {
-       display: flex;
-       flex-direction: column;
-       
-   }
+    #nav #menu1 nav {
+        display: flex;
+        justify-content: center;
+    }
+    #nav #logo img{
+        width: 5rem;  
+        padding: 0;
+        margin: 3rem;
+    }
+    #home h1 {
+        font-size: 2rem;
+        width: 10rem;
+        padding-top: 15rem;
+    }
+    #home p {
+        font-size: .8rem;
+        width: 10rem;
+    }
+    #home button {
+        margin-left: 5rem;
+        margin-top: 1rem;
+    }
+    .content h2, .content p {
+        width: 20rem;
+    }
+    #media {
+        margin-left: 10rem;
+        width: 100%;
+    }
+    #media ul li {
+        width: 2rem;
+        height: 2rem;
+        text-align: center;
+        line-height: 2rem;
+        transition: .5%;  
+        font-size: 1rem; 
+    }
+     
+
 }
 
 
 
-/* 
-#nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 5rem;
-    display: flex;
-}
-
-#nav #logo {
-    width: 30%;
-    height: 100%;
-    padding-left: 8%;    
-}
-
-#nav #logo h1 {
-    line-height: 5rem;
-    text-transform: uppercase;
-    color: rgb(31, 197, 175);
-    font-size: 2rem;
-    font-family: 'Bangers', cursive;    
-}
-
-#nav #menu1 {
-    width: 100%;
-    height: 100%;
-}
-
-#nav #menu1 nav {
-    list-style-type: none;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10%;
-}
-
-#nav #menu1 nav a {
-    line-height: 2;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black;
-    font-size: 1.5rem;   
-} */
