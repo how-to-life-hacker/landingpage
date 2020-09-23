@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid grey; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -30,7 +29,7 @@ body {
 }
 
 header {
-    height: 50vh;
+    height: 45vh;
     max-width: 100%;
     background: rgb(47, 54, 51);
     padding: 3rem;
@@ -42,51 +41,114 @@ header {
 h1 {
     font-size: 3rem;
     text-transform: uppercase;
-    border-bottom: 3px solid #4fc09a;
+    border-bottom: 3px solid rgb(47, 54, 51);
     padding-bottom: 3rem;
-    color: #4FC09A;
+    color: rgb(47, 54, 51);
     margin: 1rem;
 }
 
 h2 {
     font-size: 2rem;
     text-align: center;
-    color: #4fc09a;
-    border-bottom: 3px solid #4fc09a;
+    color: rgb(47, 54, 51);
+    text-transform: uppercase;
+    border-bottom: 3px solid rgb(47, 54, 51);
     padding-bottom: 1rem;
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
     margin: 2rem;
 }
 
 .right-box img {
-    width: 13rem;
-    height: 13rem;
+    width: 10rem;
+    height: 10rem;
     margin: 1rem;
+}
+.right-box  {
+    padding-top:0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 nav {
     display: flex;
     justify-content: space-evenly;
-    
+    width: 100%;
+}
+
+.nav {
+    width: 100%;
 }
 
 nav a {
     text-decoration: none;
+    text-transform: uppercase;
     font-size: 2rem;
     color: #4fc09a;
+}
+.logo  {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
 }
 
 .logo img{
     width: 5rem;
     height: 5rem;
-    margin: 1rem;
+    margin: 0;
     display: flex;
     justify-content: flex-start;
-    background: #e5f0ec;
+}
+
+.logo button {
+    background: #4fc09a;
+    color: rgb(47, 54, 51);
+    text-transform: uppercase;
+    box-shadow: 3px 3px 3px #000;
+    height: auto;
+    padding: 0;
+    margin: .5rem;
+    width: 4rem;
+    display: flex;
+    font-size: .8rem;
+    font-weight: 500;
+    justify-content: center;
+    border-radius: 1rem;
+    border: 2px solid white;
+}
+
+.logo button:hover {
+    color: #4fc09a;
+    background: rgb(47, 54, 51);
+    text-transform: uppercase;
+    box-shadow: 3px 3px 3px #000;
+    height: auto;
+    padding: 0;
+    margin: .5rem;
+    width: 4rem;
+    display: flex;
+    font-size: .8rem;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+a {
+    text-decoration: none;     
+}    
+
+.buttons-top {
+    display: flex;
+    flex-direction: row;
+    width: 20rem;
 }
 
 .container {
@@ -99,19 +161,27 @@ nav a {
 
 .container button {
     background: #4fc09a;
-    color: #fff;
+    color: rgb(47, 54, 51);
+    font-weight: 500;
     text-transform: uppercase;
     box-shadow: 3px 3px 3px #000;
     height: 2rem;
     width: 6rem;
     margin-bottom: 2rem;
+    border-radius: 1rem;
+    border: 2px solid black;
 }
 
-.content button:hover {
+.container button:hover {
     color: #4fc09a;
     background: rgb(47, 54, 51);
+    text-transform: uppercase;
+    box-shadow: 3px 3px 3px #000;
+    height: 2rem;
+    width: 6rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;   
 }
-
 
 footer {
     width: 100%;
@@ -119,6 +189,10 @@ footer {
     background: rgb(47, 54, 51);
 }
 
+.media {
+    display: flex;
+    justify-content: center;
+}
 
 .fa {
     padding: 1rem;
@@ -126,43 +200,42 @@ footer {
     width: 3rem;
     text-align: center;
     text-decoration: none;
+    border-radius: 50%; 
   }
-
 
 .fa:hover {
     opacity: 0.7;
 }
 
-
 .fa-facebook {
     background: #3B5998;
     color: white;
-  }
+}
   
-  .fa-twitter {
+.fa-twitter {
     background: #55ACEE;
     color: white;
-  }
+}
   
-  .fa-google {
+.fa-google {
     background: #dd4b39;
     color: white;
-  }
+}
   
-  .fa-linkedin {
+.fa-linkedin {
     background: #007bb5;
     color: white;
-  }
+}
   
-  .fa-youtube {
+.fa-youtube {
     background: #bb0000;
     color: white;
-  }
+}
   
-  .fa-instagram {
+.fa-instagram {
     background: #125688;
     color: white;
-  }
+}
 
 @media(max-width:1024px) {
     header {
@@ -170,19 +243,29 @@ footer {
         justify-content: center;
     }
     nav a {
-        margin: 1rem;
+        font-size: 1.5rem;
     }
     p {
         font-size: 1rem;
     }
     .fa {
-
         padding: 1rem;
         margin: 1rem;
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
     .right-box {
-        padding-top: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .right-box img {
+        width: 8rem;
+        height: 8rem;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -191,7 +274,19 @@ footer {
         font-size: 1rem;
     }
     .right-box {
-        padding-top: .5rem;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;  
+    }
+    .right-box img {
+        width: 8rem;
+        height: 8rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
     }
     .logo img {
         width: 3rem;
@@ -199,23 +294,42 @@ footer {
     } 
     .fa {
         padding: 1rem;
-        margin: 0;
-       
+        margin: .5rem;  
+    }
+    .media {
+        display: flex;
+        justify-content: center;
     }
 }
 
 @media(max-width: 500px) {
     nav a {
         margin: 1rem;
+        font-size: .6rem;
     }
     .right-box img{
-        width: 7rem;
-        height: 7rem;
+        width: 8rem;
+        height: 8rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .right-box {
+       
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
     .fa {
         padding: 1rem;
-        margin: 0;
+        margin: .2rem;
         margin-top: 1.5rem;
+    }
+    .media {
+        display: flex;
     }
 }
 
