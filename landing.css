@@ -1,0 +1,221 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid grey; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: cornsilk;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    max-width: 100%;
+    
+}
+
+.page-wrapper > * {
+    padding: 3rem;
+    margin: 3rem;
+    flex: 1 100%;
+    border-radius: 10px;
+    max-width:100%;
+}
+
+header {
+    height: 50vh;
+    max-width: 100%;
+    background: rgb(47, 54, 51);
+    padding: 3rem;
+    margin: 3rem;
+    flex: 1 100%;
+    border-radius: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    border-bottom: 3px solid #4fc09a;
+    padding-bottom: 3rem;
+    color: #4FC09A;
+    margin: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #4fc09a;
+    border-bottom: 3px solid #4fc09a;
+    padding-bottom: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+.right-box img {
+    width: 13rem;
+    height: 13rem;
+    margin: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #4fc09a;
+}
+
+.logo img{
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    background: #e5f0ec;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    background: #CDDFD9;
+}
+
+.container button {
+    background: #4fc09a;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 3px #000;
+    height: 2rem;
+    width: 6rem;
+    margin-bottom: 2rem;
+}
+
+.content button:hover {
+    color: #4fc09a;
+    background: rgb(47, 54, 51);
+}
+
+
+footer {
+    width: 100%;
+    height: 20vh;
+    background: rgb(47, 54, 51);
+}
+
+
+.fa {
+    padding: 1rem;
+    margin: 1rem;
+    width: 3rem;
+    text-align: center;
+    text-decoration: none;
+  }
+
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+@media(max-width:1024px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+    nav a {
+        margin: 1rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .fa {
+
+        padding: 1rem;
+        margin: 1rem;
+        margin-top: 3rem;
+    }
+    .right-box {
+        padding-top: 0;
+    }
+}
+
+@media(max-width:800px) {
+    nav a {
+        font-size: 1rem;
+    }
+    .right-box {
+        padding-top: .5rem;
+    }
+    .logo img {
+        width: 3rem;
+        height: 3rem;
+    } 
+    .fa {
+        padding: 1rem;
+        margin: 0;
+       
+    }
+}
+
+@media(max-width: 500px) {
+    nav a {
+        margin: 1rem;
+    }
+    .right-box img{
+        width: 7rem;
+        height: 7rem;
+    }
+    .fa {
+        padding: 1rem;
+        margin: 0;
+        margin-top: 1.5rem;
+    }
+}
+
